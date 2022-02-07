@@ -1,0 +1,52 @@
+.reviews{
+    padding-top: 0;
+    padding-bottom: 25.286rem;
+    &-item{
+        padding: 1.714rem 1.429rem 5.642rem;
+        max-width: 26.857rem;
+        &__title{
+            display: flex;
+            align-items: center;
+        }
+        &__img{
+            margin-right: 1.643rem;
+            border-radius: 50%;
+        }
+        &__text{
+            font-size: 1.07rem;
+            line-height: 1.928rem;
+            color: $secondary;
+        }
+        &__data{
+            display: flex;
+            margin-top: -2.286rem;
+        }
+    }
+    &-square{
+        display: flex;
+        align-items: center;
+        background: $primary;
+        border-right: 0.75px solid $light;
+        padding-right: 1rem;
+        padding-left: 1.3rem;
+    }
+    &__img{
+        margin-right: 1.07rem;
+    }
+    &__text{
+        font-family: 'Yeseva One', cursive;
+        font-size: 1.214rem;
+        line-height: 2rem;
+        color: $light;
+        text-transform: uppercase;
+    } 
+    &-days{
+        display: flex;
+        align-items: center;
+        background: $primary;
+        padding-right: 1.714rem;
+    }
+    &__img{
+        padding-left: 1rem;
+    }
+}

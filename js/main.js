@@ -18,10 +18,18 @@ $(document).ready(function () {
         };
     });
 
+    $(".hero__scroll-down").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".types").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+    });
+
+
     $(document).on('keydown', function(e) {
     if (e.keyCode == 27)
     modal.removeClass('modal-visible')
     });
+
 
 
     const swiper = new Swiper('.swiper', {
@@ -44,6 +52,13 @@ $(document).ready(function () {
 
     next.css('left', prev.width() + 10 + bullets.width() + 10)
     bullets.css('left', prev.width() + 10)
+    
+    var nextSteps = $('.swiper-button-next_2');
+    var bulletsSteps = $('.swiper-pagination_2');
+
+    nextSteps.css('left', prev.width() + 10 + bulletsSteps.width() + 10)
+    bulletsSteps.css('left', prev.width() + 10)
+
 
     new WOW().init();
 
@@ -76,8 +91,6 @@ $(document).ready(function () {
         }
         }
     });
-    
     // Маска для телефона
-
     $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
 });
