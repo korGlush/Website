@@ -1,9 +1,12 @@
 @media screen and (max-width:1200px) 
     html
         font-size: 12px
+    
     .nav
         &__item
             margin-right: 1rem
+        
+
 @media screen and (max-width:992px)
     .nav
         display: none
@@ -11,8 +14,9 @@
     .hero
         &__insta
             display: none
-        &__content
+        &__content{
             margin-left: 0
+        
 @media screen and (max-width:760px) 
     .row
         flex-direction: column
@@ -22,36 +26,40 @@
         &__card
             margin-bottom: 5rem
         
-    .card
-        &__text
-            margin-left: 0  
+    
+    .card{
+        &__text{
+            margin-left: 0
+        
 @media screen and (max-width:570px)
     .contacts
         &__phone
             margin-right: 0
             color: $light
-            text-decoration: none       
+            text-decoration: none
+        
         &__btn
             display: none
         
+    
     .title
         font-size: 1.63rem
     
     .hero
         &__scroll-down
             display: none
-        &__content{
+        &__content
             max-width: 22.86rem
-        &__text{
+        &__text
             font-size: 1.29rem
             margin-bottom: 2.28rem
         &__btn
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+        
 @media screen and (max-height:520px)
     .hero
-        &__scroll-down{
+        &__scroll-down
             display: none
         
-    
