@@ -485,7 +485,7 @@ input.invalid {
           justify-content: space-between;
 }
 
-.col-30 {
+.col {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
 }
@@ -875,9 +875,6 @@ img {
 
 .control__input {
   color: #131313;
-}
-
-.control__input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,14 +1055,14 @@ img {
   margin-left: 0.1rem;
 }
 
-.steps .section__count {
+.steps .section-content__count {
   font-family: 'Yeseva One';
   text-transform: uppercase;
   font-size: 1.286rem;
   line-height: 1.786rem;
 }
 
-.steps .section__heading--primary {
+.steps .section-content__heading--primary {
   font-family: 'Yeseva One',cursive;
   text-transform: uppercase;
   font-weight: normal;
@@ -1074,7 +1071,7 @@ img {
   color: #E3B873;
 }
 
-.steps .section__word {
+.steps .section-content__word {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,7 +1113,7 @@ img {
   margin-bottom: 1.214rem;
 }
 
-.steps-desc::after {
+.steps-desc__count::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -1126,7 +1123,7 @@ img {
   background: rgba(227, 184, 115, 0.3);
 }
 
-.steps-desc--chosen::after {
+.steps-desc__count--chosen::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -1174,7 +1171,7 @@ img {
   display: flex;
 }
 
-.team .col-30 .card::before {
+.team .card::before {
   content: '';
   position: absolute;
   top: -35px;
@@ -1187,30 +1184,30 @@ img {
           box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
-.team .col-30 .card__design::before {
+.team .card__design::before {
   background: #E3B873 url("../img/team/02.svg") no-repeat center;
 }
 
-.team .col-30 .card__foreman::before {
+.team .card__foreman::before {
   background: #E3B873 url("../img/team/03.svg") no-repeat center;
 }
 
-.team .col-30 .card__image {
+.team .card__image {
   position: relative;
 }
 
-.team .col-30 .card__name {
+.team .card__name {
   margin: 0;
   margin-bottom: 0.5rem;
 }
 
-.team .col-30 .card__desc {
+.team .card__desc {
   margin: 0;
   margin-bottom: 1.857rem;
   color: #959595;
 }
 
-.team .col-30 .card__text {
+.team .card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,7 +1221,7 @@ img {
   text-align: center;
 }
 
-.team .col-30 .card__exp {
+.team .card__exp {
   color: #fff;
   width: 100%;
   padding: 1rem;
@@ -1234,7 +1231,7 @@ img {
   background: #E3B873;
 }
 
-.team .col-30 .card-team__human {
+.team .card-team__human {
   font-size: 1.28rem;
   padding: 1.57rem 1.5rem;
   margin: 0 auto;
@@ -1359,9 +1356,6 @@ img {
 
 .footer__input {
   padding-top: 0.3rem;
-}
-
-.footer__input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1374,7 +1368,7 @@ img {
   margin-bottom: 3.2rem;
 }
 
-.footer__input-group-full-width {
+.footer__input-full-width {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 2rem;
@@ -1437,7 +1431,6 @@ img {
 
 .modal-visible {
   opacity: 1;
-  visibility: visible;
 }
 
 .modal__dialog {
@@ -1502,8 +1495,10 @@ img {
   html {
     font-size: 12px;
   }
-  .nav
-__item {
+  .container {
+    width: 90%;
+  }
+  .nav__item {
     margin-right: 1rem;
   }
 }
