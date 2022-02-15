@@ -1,0 +1,153 @@
+@media screen and (max-width:1200px) {
+    .container{
+        width: 90%;
+    }
+    html{
+        font-size: 12px;
+    }
+    .nav
+        &__item{
+            margin-right: 1rem;
+        }
+}
+@media screen and (max-width:992px){
+    .nav{
+        display: none;
+    }
+    .hero{
+        &__insta{
+            display: none;
+        }
+        // &__content{
+        //     margin-left: 0;
+        // }
+    }
+}
+@media screen and (max-width:760px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .types{
+        &__card{
+            margin-bottom: 5rem;
+        }
+    }
+    .card{
+        &__text{
+            margin-left: 0;
+        }
+    }
+    .control{
+        background-color: $dark;
+        &__text{
+            color: $light;
+        }
+        &__form{
+            flex-direction: column;
+            color: $light;
+        }
+        &__input{
+            &-group{
+                &:not(:last-child){
+                    margin-bottom: 5.25rem;
+                }
+            }
+        }
+    }
+    .steps{
+        display: none;
+    }
+    .team{
+        background-color: $dark;
+    }
+    .design{
+        background-color: $dark;
+    }
+    .reviews{
+        display: none;
+    }
+    .footer{
+        
+        background-color: $dark;
+        background-image: none;
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrap{
+            margin-top: 0;
+        }
+        &__menu{
+            display: none;
+        }
+
+        &__item{
+            order: 1;
+            max-width: 315px;
+        }
+        &__map{
+            &-item{
+                order: -11;
+                max-height: 367px;
+            }
+        }
+    }
+    .team{
+        .col-30{
+            &:not(:last-child){
+                margin-bottom: 4.5rem;
+            }
+        }
+    }
+    .section{
+        &-title{
+            &__heading{
+                color: $light;
+            }
+            &__subtitle{
+                color: $light;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:570px){
+    .contacts{
+        &__phone{
+            margin-right: 0;
+            color: $light;
+            text-decoration: none;
+        }
+        &__btn{
+            display: none;
+        }
+    }
+    .title{
+        font-size: 1.63rem;
+    }
+    .hero{
+        &__scroll-down{
+            display: none;
+        }
+        &__content{
+            max-width: 22.86rem;
+        }
+        &__text{
+            font-size: 1.29rem;
+            margin-bottom: 2.28rem;
+        }
+        &__btn{
+            display: block;
+            min-width: 22.86rem;
+            margin-bottom: 1.85rem;
+        }
+    }
+}
+@media screen and (max-height:520px){
+    .hero{
+        &__scroll-down{
+            display: none;
+        }
+    }
+}
