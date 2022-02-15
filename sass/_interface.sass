@@ -1,39 +1,43 @@
-.btn
+.button
     padding: 11px 24px
     border: none
     border-radius: 2px
     text-transform: uppercase
     font-size: 0.93rem
     &:hover
-        cursor: pointer
-    &-primary
+       cursor: pointer 
+    &--primary
         background-color: $primary
         color: $light
         box-shadow: 0px 5px 15px rgba($primary, 0.2)
-        transition: box-shadow .3s
+        transition: box-shadow 0.3s
         &:hover
             box-shadow: none
-    &-outline
-        border: 1px solid $light
+    &--outline
+        padding: 18px 46px
+        border: 1px solid #FFFFFF
         background-color: transparent
         color: $light
-
 .label
     font-size: 1.07rem
-    &-light
+    &--light
         color: rgba($light, 0.5)
-
 .input
     background-color: transparent
     border: none
-    border-bottom: 1px solid rgba(54,54,54,0.3)
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
     font-size: 1.285rem
     color: $light
     padding: 0.5rem 0
-    &-light
+    &--light
         &::placeholder
             color: $light
-        
+.control
+    .input
+        &::placeholder
+            color: $lighten-dark
+    .input
+        color: $dark
 .policy
     &__checkbox
         opacity: 0
@@ -41,7 +45,7 @@
         &:checked +
             .policy__label
                 &::before
-                    background: $primary url(../img/check.svg) no-repeat center / 0.8rem
+                   background: $primary url('../img/check.svg') no-repeat center / 0.8rem
     &__label
         display: flex
         align-items: center
@@ -50,17 +54,43 @@
             content: ''
             width: 18px
             height: 18px
-            border: 1px solid $primary
+            border: 1px solid $primary url(../img/upper.svg) no-repeat center
             border-radius: 1px
             cursor: pointer
             margin-right: 0.64rem
-        &-center
+        &--center
             justify-content: center
-    
-label
-    &.invalid
-        color: tomato
 
+
+#button
+    display: inline-block
+    background: $primary url('../img/point-up.svg') no-repeat center
+    width: 50px
+    height: 50px
+    text-align: center
+    border-radius: 4px
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: background-color .3s,   
+    opacity .5s, visibility .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+    &::after
+        content: ''
+        color: #fff
+    &:hover
+        cursor: pointer
+        background-color: lighten($primary, 10%)
+    &:active
+        background-color: $dark
+    &.show
+        opacity: 1
+        visibility: visible
+.invalid
+        color: $primary
 input
     &.invalid
-        border-bottom: 1px solid tomato
+        border-bottom: 1px solid $primary
+        margin-bottom: 5px

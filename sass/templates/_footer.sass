@@ -1,13 +1,12 @@
 .footer
+    background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
     padding-top: 3rem
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../img/footer/bg.png) no-repeat center/cover;
     &__wrap
         background-color: $black
         max-width: 63.07rem
         margin: auto
-        padding: 2.5rem
         margin-top: -20rem
-        margin-bottom: 3.714rem
+        margin-bottom: 3.71rem
         padding: 2.5rem
     &__title
         text-transform: uppercase
@@ -18,40 +17,61 @@
         margin-bottom: 3.214rem
         margin-top: 0
     &__form
-        max-width: 37.127rem
         display: flex
-        justify-content: space-between
         flex-wrap: wrap
+        justify-content: space-between
+        max-width: 37.142rem
         margin: auto
     &__input
         padding-top: 0.3rem
         &-group
-        display: flex
-        flex-direction: column
-        flex-basis: 45%
-        margin-bottom: 3.2rem
-        &-full-width
-            flex-basis: 100%
-            margin-bottom: 2rem
+            display: flex
+            flex-direction: column
+            flex-basis: 45%
+            margin-bottom: 3.2rem
+            &--full-width
+                flex-basis: 100%
+                margin-bottom: 2rem
     &__policy
         flex-basis: 100%
-        margin-bottom: 3.6rem
-    &__btn
+        margin-bottom: 3.5rem
+    &__button
         margin: auto
         padding: 1.285rem 4.785rem
     &__menu
+        background-color: $dark
         padding: 4.285rem 0
-    &__map
-        &-item
-            width: 100%
-    &__item
-        &-untitle
-            font-size: 1.428rem
+    .contacts
+        text-align: center
+        margin-top: 3.71rem
+        margin-bottom: 3.14rem
+        &__desc
+            margin: auto
+            font-family: 'Yeseva One', cursive
+            text-transform: uppercase
+            font-weight: normal
+            font-size: 1.43rem
             line-height: 2rem
-            color: $primary
-        &-social
-            &--link
-                width: 40px
-                height: 40px
-                border-radius: 50%
-                background-color: $primary
+            max-width: 42.07rem
+            margin-bottom: 1.85rem
+            &--primary
+                color: $primary
+        &__buttons
+            display: flex
+            justify-content: space-between
+            max-width: 71px
+            margin: auto
+        &__imgs
+            background: $primary 
+            border-radius: 50%
+            width: 28px
+            height: 28px
+            &:first-child
+                background: $primary url('../img/mail.svg') no-repeat center
+                
+            &:last-child
+                background: $primary url('../img/inst.svg') no-repeat center
+    &__map
+        margin: auto
+        max-width: 925px
+        margin-bottom: 4rem
